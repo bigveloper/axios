@@ -17,12 +17,16 @@
 
 3. axios 사용법
 
--   axios 다운로드
+-   axios 다운로드  
     `npm install axios`
 -   HTTP Methods  
     https://developer.mozilla.org/ko/docs/Web/HTTP/Methods
+    -   클라이언트가 웹서버에게 사용자 요청의 목적과 종류를 알리는 수단.
 -   axios Methods
-    -   GET
+    -   GET : 입력한 url에 존재하는 자원에 요청을 한다.  
+        `axios.get(url,[,config])`
+        -   GET 은 서버에서 어떤 데이터를 가져와서 보여준다거나 하는 용도
+        -   GET 은 값이나 상태를 변경할 수 없다. (get, set 을 생각해보자.)
     -   POST
     -   PUT
     -   DELETE

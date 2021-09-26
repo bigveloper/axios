@@ -41,7 +41,10 @@
         `axios.put(url[, data[, config]])`
         -   PUT 은 HTML form 태그에서 기본적으로 지원하는 HTTP Method 가 아니다.
         -   `PUT Method 는 서버에 있는 데이터베이스의 내용을 변경하는 것을 주 목적으로 한다.`
-    -   DELETE
+    -   DELETE : REST 기반 API 프로그램에서 데이터베이스에 저장되어 있는 내용을 삭제하는 목적으로 사용한다.
+        `axios.delete(url,[, config])`
+        -   Delete Method 는 HTML form 태그에서 기본적으로 지원하는 HTTP Method 가 아니다.
+        -   `Delete Method 는 서버에 있는 데이터베이스의 내용을 삭제하는 것을 주 목적으로 하기 때문에 두번째 인자{ data Object }를 아예 전달하지 않는다.`
 -   async, await
     -   async : function() 함수 앞에 키워드 추가(await 키워드가 비동기 코드를 호출 할 수 있게 해주는 함수)
     -   추가가 되고 나면 Promise 를 반환하게 한다.

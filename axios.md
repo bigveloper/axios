@@ -27,8 +27,20 @@
         `axios.get(url,[,config])`
         -   GET 은 서버에서 어떤 데이터를 가져와서 보여준다거나 하는 용도
         -   GET 은 값이나 상태를 변경할 수 없다. (get, set 을 생각해보자.)
-    -   POST
-    -   PUT
+    -   POST : 새로운 resource 를 create 할 때 사용 한다.
+        ```
+        axios.post(url,{
+            data Object
+            },[,config])
+        ```
+        -   두번째 인자 data object 는 본문으로 보낼 data 이다.
+        -   예를들어 로그인 이나 회원가입 등 사용자가 생성한 파일을 서버에 업로드 할 때 사용한다.
+        -   object 로 되어 있다는걸 생각해 보면 알 수 있다.
+        -   주소창에 url 뒤에 내용이 남지 않아 GET 보다는 안전하다.
+    -   PUT : REST 기반 API 프로그램에서 데이터베이스에 저장되어 있는 내용을 갱신하는 목적으로 사용 된다.
+        `axios.put(url[, data[, config]])`
+        -   PUT 은 HTML form 태그에서 기본적으로 지원하는 HTTP Method 가 아니다.
+        -   `PUT Method 는 서버에 있는 데이터베이스의 내용을 변경하는 것을 주 목적으로 한다.`
     -   DELETE
 -   async, await
     -   async : function() 함수 앞에 키워드 추가(await 키워드가 비동기 코드를 호출 할 수 있게 해주는 함수)
